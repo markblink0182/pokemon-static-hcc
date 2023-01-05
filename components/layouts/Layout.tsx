@@ -5,7 +5,7 @@ import { Navbar } from '../ui';
 interface Props{
   title?: string;
 }
-
+const origin = (typeof window === 'undefined') ? '' : window.location.origin;
 export const Layout: FunctionComponent<PropsWithChildren<Props>>= ({ children, title }) => {
   return (
     <>
